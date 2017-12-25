@@ -37,8 +37,10 @@ function viewCart() {
         str+='.';
       } else if (cart.length === 2 && i+1 === cart.length - 1) {
         str +=' and ';
-      } else if (cart.length > 2 and i+1 === cart.length - 1) {
+      } else if (cart.length > 2 && i+1 === cart.length - 1) {
         str += ',and';
+      } else {
+        str+=', ';
       }
     }
     console.log(str);
