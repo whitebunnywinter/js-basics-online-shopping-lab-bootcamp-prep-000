@@ -33,7 +33,7 @@ function viewCart() {
       var keyName = keyNames[0];
       var price = cart[i][keyName];
       str += `${keyName} at $${price}`;
-      if (i === cart.length + 1) {
+      if (i + 1 === cart.length) {
         str+='.';
       } else {
         str +=', ';
