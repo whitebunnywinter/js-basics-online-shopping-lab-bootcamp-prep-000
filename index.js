@@ -38,7 +38,7 @@ function viewCart() {
       } else if (cart.length === 2 && i+1 === cart.length - 1) {
         str +=' and ';
       } else if (cart.length > 2 && i+1 === cart.length - 1) {
-        str += ',and';
+        str += ',and ';
       } else {
         str+=', ';
       }
