@@ -39,8 +39,6 @@ function viewCart() {
         str +=' and ';
       } else if (cart.length > 2) {
         str += ',and '
-      } else {
-        
       }
     }
     console.log(str);
