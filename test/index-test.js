@@ -196,7 +196,8 @@ describe("placeOrder()", function() {
 
     const cartTotal = total();
     const cardNumber = Math.floor(Math.random() * 100000000);
-
+    var str = placeOrder();
+    expect(str).toBe(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`);
     expect(console.log).toHaveBeenCalledWith(
       `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`
     );
