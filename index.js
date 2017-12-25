@@ -44,7 +44,7 @@ function viewCart() {
       }
     }
     console.log(str);
-    return str;
+
   }
 }
 
