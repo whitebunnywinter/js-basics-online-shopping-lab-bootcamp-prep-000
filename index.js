@@ -35,10 +35,10 @@ function viewCart() {
       str += `${keyName} at $${price}`;
       if (i + 1 === cart.length) {
         str+='.';
-      } else if (cart.length === 2 and i+1 === cart.length - 1) {
+      } else if (cart.length === 2 && i+1 === cart.length - 1) {
         str +=' and ';
-      } else if (cart.length > 2) {
-        str += ','
+      } else if (cart.length > 2 and i+1 === cart.length - 1) {
+        str += ',and';
       }
     }
     console.log(str);
