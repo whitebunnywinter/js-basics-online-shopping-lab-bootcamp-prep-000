@@ -30,7 +30,7 @@ function viewCart() {
     var str='In your cart, you have ';
     for (var i = 0; i < cart.length; i++) {
       var keyNames = Object.keys(cart[i]);
-      str += `${keyNames} at $${cart[i].keyNames}.`;
+      str += `${keyNames} at $${cart[i][keyNames]}.`;
     }
     console.log(str);
     return str;
