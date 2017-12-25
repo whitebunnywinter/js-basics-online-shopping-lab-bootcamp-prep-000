@@ -35,8 +35,10 @@ function viewCart() {
       str += `${keyName} at $${price}`;
       if (i + 1 === cart.length) {
         str+='.';
-      } else {
+      } else if (i+1 === cart.length - 1) {
         str +=' and ';
+      } else {
+        str += ', '
       }
     }
     console.log(str);
