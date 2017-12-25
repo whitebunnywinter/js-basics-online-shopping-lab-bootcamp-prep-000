@@ -36,7 +36,7 @@ function viewCart() {
       if (i === cart.length + 1) {
         str+='.';
       } else {
-        str +=
+        str +=', ';
       }
     }
     console.log(str);
