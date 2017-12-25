@@ -65,11 +65,9 @@ function removeFromCart(item) {
   // write your code here
   var hasItem = false;
   for (var i = 0; i < cart.length; i++) {
-    if (Object.hasOwnProperty) 
-      var keyNames = Object.keys(cart[i]);
-      var keyName = keyNames[0];
-      var price = cart[i][keyName];
-      total += price;
+    if (cart[i].hasOwnProperty) 
+      hasItem = true;
+      cart = cart.
   }
 }
 
