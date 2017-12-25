@@ -87,8 +87,7 @@ describe("viewCart()", function() {
 
     const lemonsCost = getCart()[0]["lemons"];
 
-    var str = viewCart();
-    expect(str).toBe(`In your cart, you have lemons at $${lemonsCost}.`);
+    viewCart();
     expect(console.log).toHaveBeenCalledWith(
       `In your cart, you have lemons at $${lemonsCost}.`
     );
