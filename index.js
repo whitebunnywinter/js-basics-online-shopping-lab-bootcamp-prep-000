@@ -32,7 +32,12 @@ function viewCart() {
       var keyNames = Object.keys(cart[i]);
       var keyName = keyNames[0];
       var price = cart[i][keyName];
-      str += `${keyName} at $${price}.`;
+      str += `${keyName} at $${price}`;
+      if (i === cart.length + 1) {
+        str+='.';
+      } else {
+        str +=
+      }
     }
     console.log(str);
     return str;
